@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
 
 html {
-  box-sizing: border-box;
-  font-size: 14px;
+	box-sizing: border-box;
+	font-size: 14px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
