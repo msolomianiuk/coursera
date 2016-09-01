@@ -27,7 +27,7 @@ body {
 .menu-item {
     position: relative;
     background-color: #999999;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 40px 20px 20px 20px;
 }
 
@@ -37,7 +37,7 @@ body {
     right: 0;
     top: 0;
     width: 30%;
-    border: 2px solid black;
+    border: 1px solid black;
     border-top: none;
     border-right: none;
     text-align: center;
