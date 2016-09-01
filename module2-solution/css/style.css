@@ -161,7 +161,4 @@ body {
     .col-md-12 {
         width: 100%;
     }
-    .menu-item-container.col-md-6:nth-child(3) {
-        width: 100%;
-    }
 }
