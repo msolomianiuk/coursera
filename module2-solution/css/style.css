@@ -1,0 +1,164 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	font-family: 'Baloo Paaji', cursive;
+	margin:0;
+	padding:0;
+}
+
+.heading {
+	text-align: center;
+}
+
+.menu-item-container{
+	padding:0 20px 30px 20px;
+}
+
+.menu-item {
+	position:relative;
+	background-color: #999999;
+	border:2px solid black;
+	padding:40px 20px 20px 20px;
+}
+
+.menu-item:after{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width:30%;
+	border:2px solid black;
+	border-top:none;
+	border-right: none;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.menu-item.chicken::after{
+	content: "Chicken";
+	background-color: #DE9295;
+} 
+
+.menu-item.beef::after{
+	content:"Beef";	
+	color:white;
+	background-color: #CF2838;
+}
+
+.menu-item.sushi::after{
+	content:"Sushi";	
+	background-color: #E6D394;
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+	width: 100%;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/********** Desktop **********/
+
+@media (min-width: 992px) {
+	div[class*="col-lg-"] {
+		float: left;
+	}
+	.col-lg-1 {
+		width: 8.33%;
+	}
+	.col-lg-2 {
+		width: 16.66%;
+	}
+	.col-lg-3 {
+		width: 25%;
+	}
+	.col-lg-4 {
+		width: 33.33%;
+	}
+	.col-lg-5 {
+		width: 41.66%;
+	}
+	.col-lg-6 {
+		width: 50%;
+	}
+	.col-lg-7 {
+		width: 58.33%;
+	}
+	.col-lg-8 {
+		width: 66.66%;
+	}
+	.col-lg-9 {
+		width: 74.99%;
+	}
+	.col-lg-10 {
+		width: 83.33%;
+	}
+	.col-lg-11 {
+		width: 91.66%;
+	}
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+
+/********** Tablet **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	div[class*="col-md-"] {
+		float: left;
+	}
+	.col-md-1 {
+		width: 8.33%;
+	}
+	.col-md-2 {
+		width: 16.66%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+	.col-md-4 {
+		width: 33.33%;
+	}
+	.col-md-5 {
+		width: 41.66%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-7 {
+		width: 58.33%;
+	}
+	.col-md-8 {
+		width: 66.66%;
+	}
+	.col-md-9 {
+		width: 74.99%;
+	}
+	.col-md-10 {
+		width: 83.33%;
+	}
+	.col-md-11 {
+		width: 91.66%;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+
+	.menu-item-container.col-md-6:nth-child(3){
+		width:100%;
+	}
+}
